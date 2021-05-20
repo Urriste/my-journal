@@ -1,0 +1,32 @@
+.entry {
+  background-color: white;
+  border-radius: 10px;
+  width: 80vw;
+  margin: 50px;
+  padding: 10px;
+}
+
+.date {
+  font-weight: 500;
+  margin: auto 0 auto 0;
+}
+
+.entry-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.entry-content {
+  width: 100%;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.entry-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+}
