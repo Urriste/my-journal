@@ -45,13 +45,14 @@ const Main = () => {
     localStorage.setItem("entries", JSON.stringify(entries));
   };
 
-  const handleDelete = (key) => {
+  const handleDelete = async (key) => {
+    let updatedEntries = entries.filter((item) => {
+      return item.id !== key;
+    });
     setEntries(
-      entries.filter((item) => {
-        return item.id !== key;
-      })
+      updatedEntries
     );
-    localStorage.setItem("entries", JSON.stringify(entries));
+    localStorage.setItem("entries", JSON.stringify(updatedEntries));
   };
 
   return (
